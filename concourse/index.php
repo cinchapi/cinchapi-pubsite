@@ -123,7 +123,7 @@
 	    <div class="container" id="about">
 		<p class="lead">Concourse is a schemaless and distributed version control database with optimistic availability, serializable transactions and full text search. Concourse provides a more intuitive approach to data management that is easy to deploy, access and scale with minimal tuning while also maintaining the referential integrity and ACID characteristics of traditional database systems.</p>
 		<blockquote><p class="text-muted">Concourse was created for the emerging software landscape where apps are developed rapidly with flexible database needs. Concourse is a database written for programmers&mdash;it works right out the box, no assembly required&mdash;so developers can focus on building great applications without sacrificing performance.</p></blockquote>
-		<h2 style="margin-top: 1em;">Features</h2>
+		<h2 style="margin-top: 1em; margin-bottom: 1em;">Features</h2>
 		<div class="list-group">
 		    <a href="#" class="list-group-item">
 			<h4 class="list-group-item-heading">Simple Data Model</h4>
@@ -165,9 +165,52 @@
 	    </div>
 	    
 	    <div class="container" id="intro" style="margin-top: -3em;">
-		<h2>Getting Started</h2>
-		<h4>Download concourse-server</h4>
+		<h2 style="margin-bottom: 1em;">Getting Started</h2>
+		<div class="step" style="padding-bottom: 1em;">
+		    <h4><span class="label label-primary" style="margin-right: .5em;">1</span> Download the Latest Release</h4>
+		In the terminal, download the latest release for concourse-server.
+		<pre>
+$ curl -o concourse-server.zip -L http://cinchapi.org/concourse/download</pre>
+		</div>
+		<div class="step" style="padding-bottom: 1em;">
+		    <h4><span class="label label-primary" style="margin-right: .5em;">2</span> Extract Concourse Server</h4>
+		Unzip the package from downloaded archive.
+		<pre>$ unzip concourse-server.zip</pre>
+		</div>
+		<div class="step" style="padding-bottom: 1em;">
+		    <h4><span class="label label-primary" style="margin-right: .5em;">3</span> Start Concourse Server</h4>
+		Sanity check that your system is properly configured by starting Concourse is <code>console</code> mode:
+		<pre>$ cd concourse-server
+$ sh bin/concourse console</pre>
+		If everything is properly configured, you should see the following output:
+		<pre>
+Running Concourse Server...
+wrapper  | --> Wrapper Started as Console
+wrapper  | Java Service Wrapper Community Edition 64-bit 3.5.22
+wrapper  |   Copyright (C) 1999-2013 Tanuki Software, Ltd. All Rights Reserved.
+wrapper  |     http://wrapper.tanukisoftware.com
+wrapper  | 
+wrapper  | Launching a JVM...
+jvm 1    | WrapperManager: Initializing...
+jvm 1    |  _____
+jvm 1    | /  __ \
+jvm 1    | | /  \/ ___  _ __   ___ ___  _   _ _ __ ___  ___
+jvm 1    | | |    / _ \| '_ \ / __/ _ \| | | | '__/ __|/ _ \
+jvm 1    | | \__/\ (_) | | | | (_| (_) | |_| | |  \__ \  __/
+jvm 1    |  \____/\___/|_| |_|\___\___/ \__,_|_|  |___/\___|
+jvm 1    | 
+jvm 1    | Copyright (c) 2013, Cinchapi Software Collective, LLC. All Rights Reserved.
+jvm 1    | The Concourse server has started</pre>
+		Press <code>CTRL + C</code> to stop the server. Now start Concourse again in <code>background</code> mode.
+		<pre>$ sh bin/start</pre>
+		Congratulations! You now have Concourse Server up and running.
+		</div>
+		
+		<h2 style="margin-bottom: 1em;">Using Concourse Action SHell</h2>
+		<p>The Concourse Action SHell (CaSH)</p>
+		
 	    </div>
+	    
 	    
 	</div>
 
