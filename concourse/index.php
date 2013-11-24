@@ -141,7 +141,7 @@
 			<p class="list-group-item-text">Concourse can be distributed across many different servers on commodity hardware to increase read and write throughput. Distributed data is automatically partitioned and replicated to ensure that the system can withstand arbitrary failure&mdash;all while maintaining ACID strong consistency and optimistic availability. So no need to guess when your data will <em>eventually</em> be accurate&mdash;when distributed Concourse responds to a query, you can trust the results <em>immediately</em>.
 			</p>
 		    </a>
-		    <a href="#" class="list-group-item active ">
+		    <a href="#" class="list-group-item active">
 			<h4 class="list-group-item-heading">ACID Transactions</h4>
 			<p class="list-group-item-text">Concourse supports cross-record transactions that are fully ACID compliant: all operations succeed or fail together; writes are visible to all readers only after being successfully committed; serializable isolation is used to prevent dirty reads, non-repeatable reads and phantom reads; and committed transactions are immediately stored to disk so they persist in the event of power loss, crash or error.
 			</p>
