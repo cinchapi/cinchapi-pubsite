@@ -121,9 +121,10 @@
 	    <!-- Begin page content -->
 	    
 	    <div class="container" id="about">
+		<h2 style="margin-bottom: 1em;">Features</h2>
 		<p class="lead">Concourse is a schemaless and distributed version control database with optimistic availability, serializable transactions and full text search. Concourse provides a more intuitive approach to data management that is easy to deploy, access and scale with minimal tuning while also maintaining the referential integrity and ACID characteristics of traditional database systems.</p>
 		<blockquote><p class="text-muted">Concourse was created for the emerging software landscape where apps are developed rapidly with flexible database needs. Concourse is a database written for programmers&mdash;it works right out the box, no assembly required&mdash;so developers can focus on building great applications without sacrificing performance.</p></blockquote>
-		<h2 style="margin-top: 1em; margin-bottom: 1em;">Features</h2>
+		
 		<div class="list-group">
 		    <a href="#" class="list-group-item">
 			<h4 class="list-group-item-heading">Simple Data Model</h4>
