@@ -111,6 +111,7 @@
             <div class="carousel-caption jumbotron">
               <h1 style="">Introducing <span class="text-primary">Concourse</span></h1>
 	      <p>Connect to data.</p>
+	      <a href="download" class="btn btn-primary btn-lg">Download</a>
             </div>
           </div>
         </div>
@@ -123,21 +124,21 @@
 	    <div class="container" id="about">
 		<h2 style="margin-bottom: 1em;">Features</h2>
 		<p class="lead">Concourse is a schemaless and distributed version control database with optimistic availability, serializable transactions and full text search. Concourse provides a more intuitive approach to data management that is easy to deploy, access and scale with minimal tuning while also maintaining the referential integrity and ACID characteristics of traditional database systems.</p>
-		<blockquote><p class="text-muted">Concourse was created for the emerging software landscape where apps are developed rapidly with flexible database needs. Concourse is a database written for programmers&mdash;it works right out the box, no assembly required&mdash;so developers can focus on building great applications without sacrificing performance.</p></blockquote>
+		<blockquote><p class="text-muted">Concourse was created for the emerging software landscape where apps are developed rapidly with flexible database needs. Concourse is a database written for programmers&mdash;it works right out the box, no assembly required&mdash;so developers can focus on business logic without sacrificing performance.</p></blockquote>
 		
 		<div class="list-group">
 		    <a href="#" class="list-group-item">
 			<h4 class="list-group-item-heading">Simple Data Model</h4>
-			<p class="list-group-item-text">The Concourse data model is lightweight and flexible&mdash;it supports <em>any</em> kind of data at very large scales. All data about a single person, place or thing is held in a <code>record</code>, which is a collection of <code>key/value</code> pairs that are together identified by a unique <code>primary key</code>. A key can map to multiple distinct values, even if those values have different types. And speaking of types, all data within Concourse is dynamically typed&mdash;so yes, it really is that simple.
+			<p class="list-group-item-text">The Concourse data model is lightweight and flexible&mdash;it supports <em>any</em> kind of data at very large scales. Data about each person, place or thing is held in a <code>record</code>, which is a collection of <code>key/value</code> pairs that are together identified by a unique <code>primary key</code>. A key can map to multiple distinct values, even if those values have different types. And speaking of types, all data within Concourse is dynamically typed&mdash;so yes, it really is simple.
 			</p>
 		    </a>
 		    <a href="#" class="list-group-item active">
 			<h4 class="list-group-item-heading">Schemaless Design</h4>
-			<p class="list-group-item-text">Since Concourse makes very few assumptions about your data, it integrates seamlessly with your application and never needs a translator (<em>goodbye object-relational impedance mismatch</em>)! You never have to declare any structure up front&mdash;no schema, no tables, no indexes...<em>nothing</em>. Concourse dynamically adapts to your application so that you can build value in new places without having to drag the database along.</p>
+			<p class="list-group-item-text">Since Concourse makes very few assumptions about data, it integrates with your application seamlessly and never needs a translator (<em>goodbye object-relational impedance mismatch</em>)! You never have to declare any structure up front&mdash;no schema, no tables, no indexes...<em>nothing</em>. Concourse dynamically adapts to your application so that you can focus on building value in new places without having to drag the database along.</p>
 		    </a>
 		    <a href="#" class="list-group-item">
 			<h4 class="list-group-item-heading"><span class="label label-warning" style="margin-right: 1em;"> Coming Soon</span>Scalability and Fault Tolerance</h4>
-			<p class="list-group-item-text">Concourse can be distributed across many different servers on commodity hardware to increase read and write throughput. Distributed data is automatically partitioned and replicated to ensure that the system can withstand arbitrary failure&mdash;all while maintaining ACID strong consistency and optimistic availability. So no need to guess when your database will <em>eventually</em> become accurate&mdash;when distributed Concourse responds to a query, you can trust the results <em>immediately</em>.
+			<p class="list-group-item-text">Concourse can be distributed across many different servers on commodity hardware to increase read and write throughput. Distributed data is automatically partitioned and replicated to ensure that the system can withstand arbitrary failure&mdash;all while maintaining ACID strong consistency and optimistic availability. So no need to guess when your data will <em>eventually</em> be accurate&mdash;when distributed Concourse responds to a query, you can trust the results <em>immediately</em>.
 			</p>
 		    </a>
 		    <a href="#" class="list-group-item active ">
@@ -156,17 +157,24 @@
 		    </a>
 		    <a href="#" class="list-group-item">
 			<h4 class="list-group-item-heading">Full Text Search</h4>
-			<p class="list-group-item-text">Concourse automatically indexes unstructured data so you can perform full text substring searches in real time. Indexes are updated on the fly, so searches are always accurate whenever data is added or removed.</p>
+			<p class="list-group-item-text">Unstructured searches are as essential to an application's liveliness as structures queries. That's why Concourse automatically indexes text data&mdash;without diminishing write performance&mdash;so you can perform substring searches in real time as soon as data is stored. Indexes are updated on the fly, so searches are always accurate as soon as you make modifications or add new data.</p>
 		    </a>
 		    <a href="#" class="list-group-item active">
 			<h4 class="list-group-item-heading"><span class="label label-warning" style="margin-right: 1em;">Coming Soon</span> Relationships and Graph Queries</h4>
-			<p class="list-group-item-text">Concourse allows you to link records on any key and provides a built in interface to perform graph queries over all the relationships within your data.</p>
+			<p class="list-group-item-text">The people, places and things in your data are all connected. So Concourse allows you to model those relationships with enforced referential integrity and also provides a built in interface to perform analytical graph queries.</p>
 		    </a>
 		</div>
 	    </div>
 	    
 	    <div class="container" id="intro" style="margin-top: -3em;">
 		<h2 style="margin-bottom: 1em;">Getting Started</h2>
+		<div class="alert alert-info"><strong>System Requirements:</strong>
+		<ul>
+		    <li>64-bit OS X or Linux operating system</li>
+		    <li>Java 1.7+</li>
+		    </ul>
+		    <p>Check your version of your Java from the Terminal using <code>java -version 2>&1 | grep "java version"</code>. If you don't have version 1.7 or greater, please <a class="alert-link" href="http://docs.oracle.com/javase/7/docs/webnotes/install/">install</a> it before continuing.</p>
+		</div>
 		<div class="step" style="padding-bottom: 1em;">
 		    <h4><span class="label label-primary" style="margin-right: .5em;">1</span> Download the Latest Release</h4>
 		In the terminal, download the latest release for concourse-server.
@@ -180,7 +188,7 @@ $ curl -o concourse-server.zip -L http://cinchapi.org/concourse/download</pre>
 		</div>
 		<div class="step" style="padding-bottom: 1em;">
 		    <h4><span class="label label-primary" style="margin-right: .5em;">3</span> Start Concourse Server</h4>
-		Sanity check that your system is properly configured by starting Concourse is <code>console</code> mode:
+		First, sanity check that your system is properly configured by starting Concourse in <code>console</code> mode:
 		<pre>$ cd concourse-server
 $ sh bin/concourse console</pre>
 		If everything is properly configured, you should see the following output:
@@ -204,7 +212,7 @@ jvm 1    | Copyright (c) 2013, Cinchapi Software Collective, LLC. All Rights Res
 jvm 1    | The Concourse server has started</pre>
 		Press <code>CTRL + C</code> to stop the server. Now start Concourse again in <code>background</code> mode.
 		<pre>$ sh bin/start</pre>
-		Congratulations! You now have Concourse Server up and running.
+		Congratulations! You now have Concourse Server up and running. You can now read and write data using the Concourse Action SHell or the Concourse API.
 		</div>
 		
 		<h2 style="margin-bottom: 1em;">Using Concourse Action SHell</h2>
