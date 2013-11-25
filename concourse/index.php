@@ -124,42 +124,42 @@
 	    <div class="container" id="about">
 		<h2 style="margin-bottom: 1em;">Features</h2>
 		<p class="lead">Concourse is a schemaless and distributed version control database with optimistic availability, serializable transactions and full text search. Concourse provides a more intuitive approach to data management that is easy to deploy, access and scale with minimal tuning while also maintaining the referential integrity and ACID characteristics of traditional database systems.</p>
-		<blockquote><p class="text-muted">Concourse was created for the emerging software landscape where apps are developed rapidly with flexible database needs. Concourse is a database written for programmers&mdash;it works right out the box, no assembly required&mdash;so developers can focus on business logic without sacrificing performance.</p></blockquote>
+		<blockquote><p class="text-muted">Concourse is a database written for programmers&mdash;it works right out the box, no assembly required&mdash;so developers can focus on business logic without sacrificing stability or performance.</p></blockquote>
 		
 		<div class="list-group">
-		    <a href="#" class="list-group-item">
+		    <a href="#null" class="list-group-item">
 			<h4 class="list-group-item-heading">Simple Data Model</h4>
 			<p class="list-group-item-text">The Concourse data model is lightweight and flexible&mdash;it supports <em>any</em> kind of data at very large scales. Data about each person, place or thing is held in a <code>record</code>, which is a collection of <code>key/value</code> pairs that are together identified by a unique <code>primary key</code>. A key can map to multiple distinct values, even if those values have different types. And speaking of types, all data within Concourse is dynamically typed&mdash;so yes, it really is simple.
 			</p>
 		    </a>
-		    <a href="#" class="list-group-item active">
+		    <a href="#null" class="list-group-item active">
 			<h4 class="list-group-item-heading">Schemaless Design</h4>
 			<p class="list-group-item-text">Since Concourse makes very few assumptions about data, it integrates with your application seamlessly and never needs a translator (<em>goodbye object-relational impedance mismatch</em>)! You never have to declare any structure up front&mdash;no schema, no tables, no indexes...<em>nothing</em>. Concourse dynamically adapts to your application so that you can focus on building value in new places without having to drag the database along.</p>
 		    </a>
-		    <a href="#" class="list-group-item">
+		    <a href="#null" class="list-group-item">
 			<h4 class="list-group-item-heading"><span class="label label-warning" style="margin-right: 1em;"> Coming Soon</span>Scalability and Fault Tolerance</h4>
 			<p class="list-group-item-text">Concourse can be distributed across many different servers on commodity hardware to increase read and write throughput. Distributed data is automatically partitioned and replicated to ensure that the system can withstand arbitrary failure&mdash;all while maintaining ACID strong consistency and optimistic availability. So no need to guess when your data will <em>eventually</em> be accurate&mdash;when distributed Concourse responds to a query, you can trust the results <em>immediately</em>.
 			</p>
 		    </a>
-		    <a href="#" class="list-group-item active">
+		    <a href="#null" class="list-group-item active">
 			<h4 class="list-group-item-heading">ACID Transactions</h4>
 			<p class="list-group-item-text">Concourse supports cross-record transactions that are fully ACID compliant: all operations succeed or fail together; writes are visible to all readers only after being successfully committed; serializable isolation is used to prevent dirty reads, non-repeatable reads and phantom reads; and committed transactions are immediately stored to disk so they persist in the event of power loss, crash or error.
 			</p>
 		    </a>
-		    <a href="#" class="list-group-item">
+		    <a href="#null" class="list-group-item">
 			<h4 class="list-group-item-heading">Automatic Secondary Indexing</h4>
 			<p class="list-group-item-text">You no longer need to decide what is interesting about your data before you even store it. Concourse automatically indexes everything in both logical and sorted order&mdash;using a buffered storage system to ensure that writes are fast&mdash;so you can quickly fetch and query <em>any</em> key at <em>any</em> time. Concourse fully supports ad-hoc range and predicate queries and automatically caches frequently requested data for optimal performance.</p>
 		    </a>
-		    <a href="#" class="list-group-item active">
+		    <a href="#null" class="list-group-item active">
 			<h4 class="list-group-item-heading">Version Control</h4>
 			<p class="list-group-item-text">Concourse automatically and efficiently tracks changes to your data. Of course this means that you can easily audit changes and revert to previous states without downtime; but it also means that you have the power to <strong>query and fetch data from the past</strong>. Version control in Concourse makes it possible to build applications that know <em>what was known when</em> and can analyze real-time changes over time.
 			</p>
 		    </a>
-		    <a href="#" class="list-group-item">
+		    <a href="#null" class="list-group-item">
 			<h4 class="list-group-item-heading">Full Text Search</h4>
 			<p class="list-group-item-text">Unstructured searches are as essential to an application's liveliness as structures queries. That's why Concourse automatically indexes text data&mdash;without diminishing write performance&mdash;so you can perform substring searches in real time as soon as data is stored. Indexes are updated on the fly, so searches are always accurate as soon as you make modifications or add new data.</p>
 		    </a>
-		    <a href="#" class="list-group-item active">
+		    <a href="#null" class="list-group-item active">
 			<h4 class="list-group-item-heading"><span class="label label-warning" style="margin-right: 1em;">Coming Soon</span> Relationships and Graph Queries</h4>
 			<p class="list-group-item-text">The people, places and things in your data are all connected. So Concourse allows you to model those relationships with enforced referential integrity and also provides a built in interface to perform analytical graph queries.</p>
 		    </a>
