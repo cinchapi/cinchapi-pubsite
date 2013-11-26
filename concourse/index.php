@@ -152,7 +152,7 @@
 		    </a>
 		    <a href="#null" class="list-group-item active">
 			<h4 class="list-group-item-heading">Version Control</h4>
-			<p class="list-group-item-text">Concourse automatically and efficiently tracks changes to your data. Of course this means that you can easily audit changes and revert to previous states without downtime; but it also means that you have the power to <strong>query and fetch data from the past</strong>. Version control in Concourse makes it possible to build applications that know <em>what was known when</em> and can analyze real-time changes over time.
+			<p class="list-group-item-text">Concourse automatically and efficiently tracks revisions to your data. Of course this means that you can easily audit changes and revert to previous states without downtime; but it also means that you have the power to <strong>query and fetch data from the past</strong>. Version control in Concourse makes it possible to build applications that know <em>what was known when</em> and can analyze real-time changes over time.
 			</p>
 		    </a>
 		    <a href="#null" class="list-group-item">
@@ -161,7 +161,7 @@
 		    </a>
 		    <a href="#null" class="list-group-item active">
 			<h4 class="list-group-item-heading"><span class="label label-warning" style="margin-right: 1em;">Coming Soon</span> Relationships and Graph Queries</h4>
-			<p class="list-group-item-text">The people, places and things in your data are all connected. So Concourse allows you to model those relationships with enforced referential integrity and also provides a built in interface to perform analytical graph queries.</p>
+			<p class="list-group-item-text">The people, places and things in your data are all connected. So Concourse allows you to model those relationships with enforced referential integrity and also provides a built-in interface to perform analytical graph queries.</p>
 		    </a>
 		</div>
 	    </div>
