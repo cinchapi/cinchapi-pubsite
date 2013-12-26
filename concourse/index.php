@@ -82,7 +82,7 @@
 		    <div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
 			    <li><a href="#about">Features</a></li>
-			    <li><a href="#intro">Getting Started</a></li>
+			    <li><a href="https://cinchapi.atlassian.net/wiki/display/CON/Getting+Started">Getting Started</a></li>
 			    <li><a href="https://cinchapi.atlassian.net/wiki/display/CON/Concourse">Documentation</a></li>
 			    <li><a href="https://cinchapi.atlassian.net/browse/CON/">Report Issues</a></li>
 			    <li class="dropdown">
@@ -110,7 +110,7 @@
           <div class="container">
             <div class="carousel-caption jumbotron">
               <h1 style="">Introducing <span class="text-primary">Concourse</span></h1>
-	      <p>Connect to data.</p>
+	      <p style="color: #d7d7d7">meet data</p>
 	      <a href="download" class="btn btn-primary btn-lg">Download</a>
             </div>
           </div>
@@ -129,7 +129,7 @@
 		<div class="list-group">
 		    <a href="#null" class="list-group-item">
 			<h4 class="list-group-item-heading">Simple Data Model</h4>
-			<p class="list-group-item-text">The Concourse data model is lightweight and flexible&mdash;it supports <em>any</em> kind of data at very large scales. Data about each person, place or thing is held in a <code>record</code>, which is a collection of <code>key/value</code> pairs that are together identified by a unique <code>primary key</code>. A key can map to multiple distinct values, even if those values have different types. And speaking of types, all data within Concourse is dynamically typed&mdash;so yes, it really is simple.
+			<p class="list-group-item-text">The Concourse data model is lightweight and flexible&mdash;it supports <em>any</em> kind of data at very large scales. Data about each person, place or thing is held in a <code>record</code>, which is simply a collection of <code>key/value</code> pairs that are together identified by a unique <code>primary key</code>. A key can map to multiple distinct values, even if those values have different types. And speaking of types, all data within Concourse is dynamically typed&mdash;so yes, it really is simple.
 			</p>
 		    </a>
 		    <a href="#null" class="list-group-item active">
@@ -152,7 +152,7 @@
 		    </a>
 		    <a href="#null" class="list-group-item active">
 			<h4 class="list-group-item-heading">Version Control</h4>
-			<p class="list-group-item-text">Concourse automatically and efficiently tracks revisions to your data. Of course this means that you can easily audit changes and revert to previous states without downtime; but it also means that you have the power to <strong>query and fetch data from the past</strong>. Version control in Concourse makes it possible to build applications that know <em>what was known when</em> and can analyze real-time changes over time.
+			<p class="list-group-item-text">Concourse automatically and efficiently tracks revisions to your data. Of course this means that you can easily audit changes and revert to previous states without downtime; but it also means that you have the power to <strong>query and fetch data from any point in the past</strong>. Version control in Concourse makes it possible to build applications that know <em>what was known when</em> and can analyze real-time changes over time.
 			</p>
 		    </a>
 		    <a href="#null" class="list-group-item">
@@ -164,65 +164,7 @@
 			<p class="list-group-item-text">The people, places and things in your data are all connected. So Concourse allows you to model those relationships with enforced referential integrity and also provides a built-in interface to perform analytical graph queries.</p>
 		    </a>
 		</div>
-	    </div>
-	    
-	    <div class="container" id="intro" style="margin-top: -3em;">
-		<h2 style="margin-bottom: 1em;">Getting Started</h2>
-		<div class="alert alert-info"><strong>System Requirements:</strong>
-		<ul>
-		    <li>64-bit OS X or Linux operating system</li>
-		    <li>Java 1.7+</li>
-		    </ul>
-		    <p>Check your version of your Java from the Terminal using <code>java -version 2>&1 | grep "java version"</code>. If you don't have version 1.7 or greater, please <a class="alert-link" href="http://docs.oracle.com/javase/7/docs/webnotes/install/">install</a> it before continuing.</p>
-		</div>
-		<div class="step" style="padding-bottom: 1em;">
-		    <h4><span class="label label-primary" style="margin-right: .5em;">1</span> Download the Latest Release</h4>
-		In the terminal, download the latest release for concourse-server.
-		<pre>
-$ curl -o concourse-server.zip -L http://cinchapi.org/concourse/download</pre>
-		</div>
-		<div class="step" style="padding-bottom: 1em;">
-		    <h4><span class="label label-primary" style="margin-right: .5em;">2</span> Extract Concourse Server</h4>
-		Unzip the package from downloaded archive.
-		<pre>$ unzip concourse-server.zip</pre>
-		</div>
-		<div class="step" style="padding-bottom: 1em;">
-		    <h4><span class="label label-primary" style="margin-right: .5em;">3</span> Start Concourse Server</h4>
-		First, sanity check that your system is properly configured by starting Concourse in <code>console</code> mode:
-		<pre>$ cd concourse-server
-$ sh bin/concourse console</pre>
-		If everything is properly configured, you should see the following output:
-		<pre>
-Running Concourse Server...
-wrapper  | --> Wrapper Started as Console
-wrapper  | Java Service Wrapper Community Edition 64-bit 3.5.22
-wrapper  |   Copyright (C) 1999-2013 Tanuki Software, Ltd. All Rights Reserved.
-wrapper  |     http://wrapper.tanukisoftware.com
-wrapper  | 
-wrapper  | Launching a JVM...
-jvm 1    | WrapperManager: Initializing...
-jvm 1    |  _____
-jvm 1    | /  __ \
-jvm 1    | | /  \/ ___  _ __   ___ ___  _   _ _ __ ___  ___
-jvm 1    | | |    / _ \| '_ \ / __/ _ \| | | | '__/ __|/ _ \
-jvm 1    | | \__/\ (_) | | | | (_| (_) | |_| | |  \__ \  __/
-jvm 1    |  \____/\___/|_| |_|\___\___/ \__,_|_|  |___/\___|
-jvm 1    | 
-jvm 1    | Copyright (c) 2013, Cinchapi Software Collective, LLC. All Rights Reserved.
-jvm 1    | The Concourse server has started</pre>
-		Press <code>CTRL + C</code> to stop the server. Now start Concourse again in <code>background</code> mode.
-		<pre>$ sh bin/start</pre>
-		Congratulations! You now have Concourse Server up and running. You can now read and write data using the Concourse Action SHell or the Concourse API.
-		</div>
-		
-		<h2 style="margin-bottom: 1em;">Using Concourse Action SHell</h2>
-		<p>The Concourse Action SHell (CaSH)</p>
-		
-	    </div>
-	    
-	    
-	</div>
-
+            </div>
 	<div id="footer">
 	    <div class="container">
 		<p class="text-muted credit">Copyright &copy; 2013 Cinchapi Software Collective. Fork Concourse on <a href="https://github.com/cinchapi/concourse/fork">Github</a>.</p>
