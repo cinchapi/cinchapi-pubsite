@@ -1,5 +1,5 @@
 <?php
-    $location="https://dl.dropboxusercontent.com/s/1sayuc99jkpm1f8/concourse-server-0.2.0.947-BETA.zip?dl=1&token_hash=AAGZVS6UmCtfvso0sJ7nxafX9rQFwocysNqY80NxHVzRnw";
+    $location="https://dl.dropboxusercontent.com/s/p365tftee2emqdc/concourse-server-0.3.0.1141-BETA.bin?dl=1&token_hash=AAFj3TdMtjujxYm0GrZpUzHIRg2IeRmIKiHDufsO7R8u3A";
     header("Location: ".$location);
     die();
 ?>
