@@ -88,7 +88,7 @@
 			    <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Download <b class="caret"></b></a>
 				<ul class="dropdown-menu">
-				    <li class="dropdown-header">Version 0.2 (RC1)</li>
+				    <li class="dropdown-header">Version 0.3.0 (RC1)</li>
 				    <li><a href="download-api">concourse</a></li>
 				    <li><a href="download">concourse-server</a></li>
 				    <li class="divider"></li>
