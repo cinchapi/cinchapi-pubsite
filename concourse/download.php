@@ -1,5 +1,5 @@
 <?php
-    $location="https://dl.dropboxusercontent.com/s/occ0bcd8m0ev6cg/concourse-server-0.3.0.1159-BETA.bin?dl=1&token_hash=AAHvIO2WHokkBdzGhnpkTWM9ydGOeiHnUGKEZRnkx4dd7g";
+    $location="https://github.com/cinchapi/concourse/releases/download/v0.3.0/concourse-server-0.3.0.1179.bin";
     header("Location: ".$location);
     die();
 ?>
